@@ -1,6 +1,4 @@
-# Chapter Three
-
-FROM "UNITY" TO RENEWED DISUNITY, SEPTEMBER 1967-AUGUST 1968
+# Chapter Three - FROM "UNITY" TO RENEWED DISUNITY, SEPTEMBER 1967-AUGUST 1968
 
 ## Steps toward the Three-way Alliance, September-December 1967
 

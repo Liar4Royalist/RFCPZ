@@ -1,6 +1,4 @@
-# Chapter Four
-
-ORDER AND UNITY, AUGUST 1968-SEPTEMBER 1969
+# Chapter Four - ORDER AND UNITY, AUGUST 1968-SEPTEMBER 1969
 
 ## Crackdown, August-September 1968
 

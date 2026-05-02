@@ -1,8 +1,4 @@
-# Chapter Ten
-
-## CONSOLIDATION AND RENEWED INSTABILITY,
-
-## AUGUST 1975-SEPTEMBER 1976
+# Chapter Ten - CONSOLIDATION AND RENEWED INSTABILITY, AUGUST 1975-SEPTEMBER 1976
 
 ## Upholding the Line of Deng Xiaoping in Zhejiang, August-December 1975
 By 9 August 1975 the situation in Hangzhou appeared sufficiently stable for the CCP ZPC to convene a work conference under the guidance of Wang Hongwen and Ji Dengkui.[^1] The report of the conference made no mention of Ji and Wang's presence at the conference but it is certain that they did attend.[^2] The main theme of the work conference concerned the questions of party leadership and the unity of the working class. Deng Xiaoping's instructions were conveyed regarding the establishment of strong, unified and militant leading groups, which placed "daring" first (敢字当头)[^3] and possessed the determination to overcome bourgeois factionalism. Deng was making a deliberate and striking reference to Point 3 of the CC's August 1966 16 point manifesto launching the Cultural Revolution, which had called on the party leadership to "put daring above everything else and boldly arouse the masses".[^4] Delegates to the conference visited the silk complex to see first hand the rapid changes that had occurred since Weng's arrest. Both the "two crashthroughs" and the party’s class line in the period of socialism were subjected to close scrutiny. While the center's decisive handling of the "Zhejiang problem" may have created a mood of optimism, delegates were reminded that "The struggle has not yet come to an end". That factionalism had seriously affected industrial enterprises was highlighted by the quotation of Mao's 1967 statement that there was no fundamental conflict of interests within the working class.
