@@ -1,4 +1,5 @@
 # ABBREVIATIONS
+# 缩略语
 
 | Abbreviation | Full form |
 | --- | --- |
@@ -36,3 +37,40 @@
 | ZJRB | ZHEJIANG, RIBAO |
 | ZPS | ZHEJIANG PROVINCIAL SERVICE |
 | ZPTUC | ZHEJIANG PROVINCIAL TRADE UNION COUNCIL |
+
+| 缩略语 | 全称 |
+| --- | --- |
+| AS | 《亚洲调查》 |
+| BR | 《北京周报》 |
+| CC | 中央委员会 |
+| CNA | 《中国新闻分析》 |
+| CNS | 《中国新闻摘要》 |
+| CQ | 《中国季刊》 |
+| CCP | 中国共产党 |
+| CYL | 共产主义青年团 |
+| CS | *Current Scene* |
+| F&F | 《事实与特写》 |
+| FEER | 《远东经济评论》 |
+| FBIS/CHI | 外国广播信息服务：《每日报告：中国》 |
+| FBIS/CR/PSMA | 外国广播信息服务：《中国报告：政治、社会和军事事务》 |
+| HMC | 中共杭州市委 |
+| HMMCH | 杭州市民兵指挥部 |
+| HMRC | 杭州市革命委员会 |
+| HMWC | 杭州市工人代表大会 |
+| HZRB | 《杭州日报》 |
+| I&S | 《问题与研究》 |
+| MAC | 军事委员会 |
+| NPC | 全国人民代表大会 |
+| PR | 《北京周报》 |
+| PLA | 中国人民解放军 |
+| RMRB | 《人民日报》 |
+| SCMM | 美国驻香港总领事馆：《中国大陆杂志选辑》 |
+| SCMP | 美国驻香港总领事馆：《中国大陆报刊概览》 |
+| SWB/FE | BBC：《世界广播摘要》第三部分：远东 |
+| URS | 友联研究所（香港）：《友联研究服务》 |
+| ZPC | 中共浙江省委 |
+| ZPMD | 浙江省军区 |
+| ZPRC | 浙江省革命委员会 |
+| ZJRB | 《浙江日报》 |
+| ZPS | 浙江省广播服务 |
+| ZPTUC | 浙江省总工会 |
