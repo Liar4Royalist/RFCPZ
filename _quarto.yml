@@ -1,0 +1,45 @@
+project:
+  type: book
+  output-dir: _book
+  pre-render: node scripts/prepare-quarto-build.mjs
+
+book:
+  title: "Rebellion and Factionalism in a Chinese Province: Zhejiang, 1966-1976"
+  subtitle: "一个中国省份的造反与派性：浙江，1966-1976"
+  output-file: RFCPZ
+  chapters:
+    - .quarto-build/index.qmd
+    - .quarto-build/acknowledgments.qmd
+    - .quarto-build/abbreviations.qmd
+    - .quarto-build/introduction.qmd
+    - .quarto-build/chapter-01.qmd
+    - .quarto-build/chapter-02.qmd
+    - .quarto-build/chapter-03.qmd
+    - .quarto-build/chapter-04.qmd
+    - .quarto-build/chapter-05.qmd
+    - .quarto-build/chapter-06.qmd
+    - .quarto-build/chapter-07.qmd
+    - .quarto-build/chapter-08.qmd
+    - .quarto-build/chapter-09.qmd
+    - .quarto-build/chapter-10.qmd
+    - .quarto-build/conclusion.qmd
+
+format:
+  pdf:
+    documentclass: book
+    papersize: a4
+    pdf-engine: xelatex
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    colorlinks: true
+    mainfont: "Noto Serif CJK SC"
+    sansfont: "Noto Sans CJK SC"
+    monofont: "Noto Sans Mono CJK SC"
+    CJKmainfont: "Noto Serif CJK SC"
+    CJKsansfont: "Noto Sans CJK SC"
+    CJKmonofont: "Noto Sans Mono CJK SC"
+  epub:
+    toc: true
+    toc-depth: 2
+    number-sections: false

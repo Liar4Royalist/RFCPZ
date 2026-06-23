@@ -1,2 +1,6 @@
 RFCPZ.pdf
 _pdf_pages/
+.quarto/
+.quarto-build/
+_book/
+dist/

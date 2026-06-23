@@ -1,0 +1,84 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to create or update, for example v1.0.0"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  quarto-release:
+    name: Build PDF and EPUB
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install CJK fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk fonts-noto-cjk-extra
+          fc-cache -f
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tinytex: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Render book
+        run: |
+          rm -rf _book dist .quarto-build
+          quarto render
+
+      - name: Prepare release assets
+        run: |
+          mkdir -p dist
+          pdf="$(find _book -maxdepth 1 -type f -name '*.pdf' -print -quit)"
+          epub="$(find _book -maxdepth 1 -type f -name '*.epub' -print -quit)"
+
+          if [ -z "$pdf" ] || [ -z "$epub" ]; then
+            echo "Expected PDF and EPUB outputs in _book/."
+            find _book -maxdepth 2 -type f -print
+            exit 1
+          fi
+
+          cp "$pdf" dist/RFCPZ.pdf
+          cp "$epub" dist/RFCPZ.epub
+          ls -lh dist
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RFCPZ-book
+          path: dist/*
+
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INPUT_TAG: ${{ inputs.tag }}
+        run: |
+          tag="${INPUT_TAG:-$GITHUB_REF_NAME}"
+
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" dist/RFCPZ.pdf dist/RFCPZ.epub --clobber
+          else
+            gh release create "$tag" dist/RFCPZ.pdf dist/RFCPZ.epub \
+              --title "$tag" \
+              --notes "Automated Quarto build for $tag from $GITHUB_SHA."
+          fi
