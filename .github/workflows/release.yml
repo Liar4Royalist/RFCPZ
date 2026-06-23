@@ -44,6 +44,7 @@ jobs:
       - name: Render book
         run: |
           rm -rf _book dist .quarto-build
+          node scripts/prepare-quarto-build.mjs
           quarto render
 
       - name: Prepare release assets
