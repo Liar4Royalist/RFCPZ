@@ -2,7 +2,6 @@ import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const sources = [
-  ["README.md", "index.qmd", "front"],
   ["Acknowledgments.md", "acknowledgments.qmd", "acknowledgments"],
   ["Abbreviations.md", "abbreviations.qmd", "abbreviations"],
   ["Introduction.md", "introduction.qmd", "introduction"],
@@ -49,7 +48,7 @@ await mkdir(outDir, { recursive: true });
 
 for (const [source, target, prefix] of sources) {
   const raw = await readFile(source, "utf8");
-  const unnumbered = target === "index.qmd" || target === "acknowledgments.qmd" || target === "abbreviations.qmd";
+  const unnumbered = target === "acknowledgments.qmd" || target === "abbreviations.qmd";
   const prepared = prefixFootnotes(mergeLeadingHeadings(raw, unnumbered), prefix);
   await writeFile(path.join(outDir, target), `${prepared.trimEnd()}\n`);
 }

@@ -4,3 +4,6 @@ _pdf_pages/
 .quarto-build/
 _book/
 dist/
+
+/.quarto/
+**/*.quarto_ipynb
