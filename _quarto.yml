@@ -8,7 +8,7 @@ book:
   subtitle: "一个中国省份的造反与派性：浙江，1966-1976"
   output-file: RFCPZ
   chapters:
-    - .quarto-build/index.qmd
+    - index.qmd
     - .quarto-build/acknowledgments.qmd
     - .quarto-build/abbreviations.qmd
     - .quarto-build/introduction.qmd
